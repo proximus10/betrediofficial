@@ -2259,9 +2259,9 @@
 
         if (is_mobile) mobileBoxes();
 
-        if (!is_mobile) bottomMenuWidget(is_mobile);
-
         if (!is_mobile) slotGames();
+
+        if (!is_mobile) bottomMenuWidget(is_mobile);
 
         tgPromo();
 
@@ -3755,7 +3755,7 @@ ${
 
       var newSection = `
 <div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 10px;">
-  <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
+  <div class="bottom-menu-widget">
     <a href="https://betredi124.com/${language}/casino/games/spribe-aviator">
       <img src="https://proximus10.github.io/betrediofficial/images/bottom-menu-widget/${language}/games.webp" alt="games" class="bottomMenuWidgetImage" >
     </a>
@@ -3763,7 +3763,7 @@ ${
 
   ${
     !isMobile
-      ? `<div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
+      ? `<div class="bottom-menu-widget">
     <a href="https://betredi124.com/${language}/casino/group/live-casino">
       <img src="https://proximus10.github.io/betrediofficial/images/bottom-menu-widget/${language}/live_casino.webp" alt="livecasino" class="bottomMenuWidgetImage" >
     </a>
@@ -3771,12 +3771,12 @@ ${
       : ``
   }
 
-  <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
+  <div class="bottom-menu-widget">
     <a href="https://betredi124.com/${language}/sportsbook">
       <img src="https://proximus10.github.io/betrediofficial/images/bottom-menu-widget/${language}/sports.webp" alt="sporb" class="bottomMenuWidgetImage" >
     </a>
   </div>
-  <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
+  <div class="bottom-menu-widget">
     <a href="https://betredi124.com/${language}/casino/slots">
       <img src="https://proximus10.github.io/betrediofficial/images/bottom-menu-widget/${language}/casino.webp" alt="slotcasino" class="bottomMenuWidgetImage" >
     </a>
@@ -3784,7 +3784,8 @@ ${
 </div>
     `;
 
-      $("#main-slider.manually-added-home-widgets").after(newSection);
+      // $("#main-slider.manually-added-home-widgets").after(newSection);
+      $("#slotoyunlari").after(newSection);
     }
 
     function slotGames() {
@@ -3934,7 +3935,8 @@ ${
 </div>
 `;
 
-      $(".bottomMenuWidgedContainer").after(newSection);
+      $("#main-slider.manually-added-home-widgets").after(newSection);
+      // $(".bottomMenuWidgedContainer").after(newSection);
     }
 
     function tgPromo() {
@@ -3992,7 +3994,10 @@ ${
 </div>
 `;
 
-      if ($("#slotoyunlari").length > 0) $("#slotoyunlari").after(newSection);
+      // if ($("#slotoyunlari").length > 0) $("#slotoyunlari").after(newSection);
+
+      if ($(".bottomMenuWidgedContainer").length > 0)
+        $(".bottomMenuWidgedContainer").after(newSection);
       else $("#mini-slider-wrapper").eq(0).after(newSection);
     }
 
