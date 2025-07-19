@@ -3996,7 +3996,7 @@ ${
 
       // if ($("#slotoyunlari").length > 0) $("#slotoyunlari").after(newSection);
 
-      if ($("#slotoyunlari").length > 0)
+      if ($(".bottomMenuWidgedContainer").length > 0)
         $(".bottomMenuWidgedContainer").after(newSection);
       else $("#mini-slider-wrapper").eq(0).after(newSection);
     }
