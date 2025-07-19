@@ -2259,9 +2259,9 @@
 
         if (is_mobile) mobileBoxes();
 
-        if (!is_mobile) bottomMenuWidget(is_mobile);
-
         if (!is_mobile) slotGames();
+
+        if (!is_mobile) bottomMenuWidget(is_mobile);
 
         tgPromo();
 
@@ -3784,7 +3784,8 @@ ${
 </div>
     `;
 
-      $("#main-slider.manually-added-home-widgets").after(newSection);
+      // $("#main-slider.manually-added-home-widgets").after(newSection);
+      $("#slotoyunlari").after(newSection);
     }
 
     function slotGames() {
@@ -3934,7 +3935,8 @@ ${
 </div>
 `;
 
-      $(".bottomMenuWidgedContainer").after(newSection);
+      $("#main-slider.manually-added-home-widgets").after(newSection);
+      // $(".bottomMenuWidgedContainer").after(newSection);
     }
 
     function tgPromo() {
@@ -3992,7 +3994,10 @@ ${
 </div>
 `;
 
-      if ($("#slotoyunlari").length > 0) $("#slotoyunlari").after(newSection);
+      // if ($("#slotoyunlari").length > 0) $("#slotoyunlari").after(newSection);
+
+      if ($("#slotoyunlari").length > 0)
+        $(".bottomMenuWidgedContainer").after(newSection);
       else $("#mini-slider-wrapper").eq(0).after(newSection);
     }
 
