@@ -1882,24 +1882,17 @@
 
     function injectVipImageLoop() {
       const interval = setInterval(() => {
-        if (window.location.pathname !== "/tr/vip/") return;
+        const vipDiv = document.querySelector(".vip");
 
-        const mainContent = document.querySelector("#main__content");
-        const section = mainContent?.querySelector(".section  ");
-        const container = section?.querySelector(".container");
-        const row = container?.querySelector(".row");
-
-        if (mainContent && section && container && row) {
-          const existingVip = row.querySelector(".vip");
-          if (existingVip) {
-            existingVip.remove();
-          }
-
-          const vipDiv = document.createElement("div");
-          vipDiv.className = "vip";
+        if (
+          (window.location.pathname === "/tr/vip/" ||
+            window.location.pathname === "/en/vip/") &&
+          vipDiv &&
+          !document.querySelector("#vip-image-injected")
+        )
+          alert(true);
+        {
           vipDiv.innerHTML = `<img id="vip-image-injected" src="https://proximus10.github.io/betrediofficial/images/vip/vip.jpg" style="width: 100%" />`;
-
-          row.insertBefore(vipDiv, row.firstChild);
           clearInterval(interval);
         }
       }, 300);
