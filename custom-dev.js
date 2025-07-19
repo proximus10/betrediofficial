@@ -3345,7 +3345,7 @@ ${
       transform: translateX(0%) translateY(0);
     }
     to {
-      transform: translateX(0%) translateY(-32px);
+      transform: translateX(0%) translateY(-25px);
     }
   }
 
@@ -3354,7 +3354,7 @@ ${
       transform: translateX(-45%) translateY(0);
     }
     to {
-      transform: translateX(-45%) translateY(-32px);
+      transform: translateX(-45%) translateY(-25px);
     }
   }
 
@@ -3363,7 +3363,7 @@ ${
       transform: translateX(-90%) translateY(0);
     }
     to {
-      transform: translateX(-90%) translateY(-32px);
+      transform: translateX(-90%) translateY(-25px);
     }
   }
 
@@ -3372,7 +3372,7 @@ ${
       transform: translateX(-135%) translateY(0);
     }
     to {
-      transform: translateX(-135%) translateY(-32px);
+      transform: translateX(-135%) translateY(-25px);
     }
   }
       `;
@@ -3411,8 +3411,8 @@ ${
     <div class="row">
       <div class="col-12">
         <div class="section__title-wrap">
-          <h2 class="section__title" style="font-weigth: 800 !important;">
-            <img src="https://proximus10.github.io/betrediofficial/images/extra.png" alt="extra-games" class="svg-icon" style="width: 38px !important; height: 38px !important;" />
+          <h2 class="section__title">
+            <img src="https://proximus10.github.io/betrediofficial/images/extra.png" alt="extra-games" class="svg-icon" style="width: 30px !important; height: 30px !important;" />
             ${language === "tr" ? "EKSTRA OYUNLAR" : "EXTRA GAMES"}
           </h2>
           <a class="section__view section__view--carousel" href="https://betredi124.com/${language}/casino/group/top-games">
@@ -3796,10 +3796,10 @@ ${
      <div class="manually-added-home-widgets section" id="slotoyunlari" style="margin-bottom: 14px;">
   <div class="container otherGames">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12" style="margin-bottom: 12px;">
         <div class="section__title-wrap">
-          <h2 class="section__title" style="font-size: 30px; font-family: 'Rajdhani-SemiBold', serif; margin-bottom: 10px;">
-            <img src="https://proximus10.github.io/betrediofficial/images/slot-games-title/slot.png" width="38" height="38" class="d-block mx-auto">
+          <h2 class="section__title">
+            <img src="https://proximus10.github.io/betrediofficial/images/slot-games-title/slot.png" width="30" height="30" class="d-block mx-auto">
             ${title}
           </h2>
         </div>
@@ -4005,10 +4005,10 @@ ${
 <div class="manually-added-home-widgets section" id="casinooyunlari" style="margin-bottom: 10px;">
   <div class="container otherGames">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12" style="margin-bottom: 12px">
         <div class="section__title-wrap">
-          <h2 class="section__title" style="font-size: 30px; font-family: 'Rajdhani-SemiBold', serif; margin-bottom: 10px;">
-            <img src="https://proximus10.github.io/betrediofficial/images/casino-games-title/live_casino.png" width="38" height="38" class="d-block mx-auto">
+          <h2 class="section__title">
+            <img src="https://proximus10.github.io/betrediofficial/images/casino-games-title/live_casino.png" width="30" height="30" class="d-block mx-auto">
             ${title}
           </h2>
         </div>

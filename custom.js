@@ -3345,7 +3345,7 @@ ${
       transform: translateX(0%) translateY(0);
     }
     to {
-      transform: translateX(0%) translateY(-32px);
+      transform: translateX(0%) translateY(-25px);
     }
   }
 
@@ -3354,7 +3354,7 @@ ${
       transform: translateX(-45%) translateY(0);
     }
     to {
-      transform: translateX(-45%) translateY(-32px);
+      transform: translateX(-45%) translateY(-25px);
     }
   }
 
@@ -3363,7 +3363,7 @@ ${
       transform: translateX(-90%) translateY(0);
     }
     to {
-      transform: translateX(-90%) translateY(-32px);
+      transform: translateX(-90%) translateY(-25px);
     }
   }
 
@@ -3372,7 +3372,7 @@ ${
       transform: translateX(-135%) translateY(0);
     }
     to {
-      transform: translateX(-135%) translateY(-32px);
+      transform: translateX(-135%) translateY(-25px);
     }
   }
       `;
@@ -3412,7 +3412,7 @@ ${
       <div class="col-12">
         <div class="section__title-wrap">
           <h2 class="section__title">
-            <img src="https://proximus10.github.io/betrediofficial/images/extra.png" alt="extra-games" class="svg-icon" style="width: 32px !important; height: 32px !important;" />
+            <img src="https://proximus10.github.io/betrediofficial/images/extra.png" alt="extra-games" class="svg-icon" style="width: 30px !important; height: 30px !important;" />
             ${language === "tr" ? "EKSTRA OYUNLAR" : "EXTRA GAMES"}
           </h2>
           <a class="section__view section__view--carousel" href="https://betredi124.com/${language}/casino/group/top-games">
@@ -3799,7 +3799,7 @@ ${
       <div class="col-12" style="margin-bottom: 12px;">
         <div class="section__title-wrap">
           <h2 class="section__title">
-            <img src="https://proximus10.github.io/betrediofficial/images/slot-games-title/slot.png" width="32" height="32" class="d-block mx-auto">
+            <img src="https://proximus10.github.io/betrediofficial/images/slot-games-title/slot.png" width="30" height="30" class="d-block mx-auto">
             ${title}
           </h2>
         </div>
@@ -4008,7 +4008,7 @@ ${
       <div class="col-12" style="margin-bottom: 12px">
         <div class="section__title-wrap">
           <h2 class="section__title">
-            <img src="https://proximus10.github.io/betrediofficial/images/casino-games-title/live_casino.png" width="32" height="32" class="d-block mx-auto">
+            <img src="https://proximus10.github.io/betrediofficial/images/casino-games-title/live_casino.png" width="30" height="30" class="d-block mx-auto">
             ${title}
           </h2>
         </div>
