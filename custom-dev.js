@@ -1399,8 +1399,6 @@
       link.rel = "stylesheet";
       link.href = "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css";
       document.head.appendChild(link);
-
-      // css
     }
 
     const shuffleArray = (array) => {
@@ -1882,23 +1880,6 @@
       // $("#game-chooser").before(miniGamesSection);
     }
 
-    // function injectVipImageLoop() {
-    //   const interval = setInterval(() => {
-    //     const vipDiv = document.querySelector(".vip");
-
-    //     if (
-    //       window.location.pathname === "/tr/vip/" &&
-    //       vipDiv &&
-    //       !document.querySelector("#vip-image-injected")
-    //     )
-    //       alert(true);
-    //     {
-    //       vipDiv.innerHTML = `<img id="vip-image-injected" src="https://proximus10.github.io/betrediofficial/images/vip/vip.jpg" style="width: 100%" />`;
-    //       clearInterval(interval);
-    //     }
-    //   }, 300);
-    // }
-
     function injectVipImageLoop() {
       const interval = setInterval(() => {
         if (window.location.pathname !== "/tr/vip/") return;
@@ -1916,7 +1897,7 @@
 
           const vipDiv = document.createElement("div");
           vipDiv.className = "vip";
-          vipDiv.innerHTML = `<img id="vip-image-injected" src="https://betredi1.github.io/betrediofficial/images/vip/vip.jpg" style="width: 100%">`;
+          vipDiv.innerHTML = `<img id="vip-image-injected" src="https://proximus10.github.io/betrediofficial/images/vip/vip.jpg" style="width: 100%" />`;
 
           row.insertBefore(vipDiv, row.firstChild);
           clearInterval(interval);
@@ -3765,7 +3746,7 @@ ${
           height="48"
           class="d-block mx-auto"
         />
-        <span>${language === "tr" ? "Şanslı Oyunlar" : "Lucky Games"}</span>
+        <span>${language === "tr" ? "RTP Oyunlar" : "RTP Games"}</span>
       </div>
     </div>
   </div>
