@@ -1399,8 +1399,6 @@
       link.rel = "stylesheet";
       link.href = "https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css";
       document.head.appendChild(link);
-
-      // css
     }
 
     const shuffleArray = (array) => {
@@ -1884,16 +1882,24 @@
 
     function injectVipImageLoop() {
       const interval = setInterval(() => {
-        const vipDiv = document.querySelector(".vip");
+        if (window.location.pathname !== "/tr/vip/") return;
 
-        if (
-          window.location.pathname === "/tr/vip/" &&
-          vipDiv &&
-          !document.querySelector("#vip-image-injected")
-        )
-          alert(true);
-        {
+        const mainContent = document.querySelector("#main__content");
+        const section = mainContent?.querySelector(".section  ");
+        const container = section?.querySelector(".container");
+        const row = container?.querySelector(".row");
+
+        if (mainContent && section && container && row) {
+          const existingVip = row.querySelector(".vip");
+          if (existingVip) {
+            existingVip.remove();
+          }
+
+          const vipDiv = document.createElement("div");
+          vipDiv.className = "vip";
           vipDiv.innerHTML = `<img id="vip-image-injected" src="https://proximus10.github.io/betrediofficial/images/vip/vip.jpg" style="width: 100%" />`;
+
+          row.insertBefore(vipDiv, row.firstChild);
           clearInterval(interval);
         }
       }, 300);
@@ -3740,7 +3746,7 @@ ${
           height="48"
           class="d-block mx-auto"
         />
-        <span>${language === "tr" ? "Şanslı Oyunlar" : "Lucky Games"}</span>
+        <span>${language === "tr" ? "RTP Oyunlar" : "RTP Games"}</span>
       </div>
     </div>
   </div>
