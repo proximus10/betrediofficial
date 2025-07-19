@@ -3755,7 +3755,7 @@ ${
 
       var newSection = `
 <div class="manually-added-home-widgets bottomMenuWidgedContainer" id="bottomMenuWidgedContainer" style="margin-bottom: 10px;">
-  <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
+  <div class="bottom-menu-widget">
     <a href="https://betredi124.com/${language}/casino/games/spribe-aviator">
       <img src="https://proximus10.github.io/betrediofficial/images/bottom-menu-widget/${language}/games.webp" alt="games" class="bottomMenuWidgetImage" >
     </a>
@@ -3763,7 +3763,7 @@ ${
 
   ${
     !isMobile
-      ? `<div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
+      ? `<div class="bottom-menu-widget">
     <a href="https://betredi124.com/${language}/casino/group/live-casino">
       <img src="https://proximus10.github.io/betrediofficial/images/bottom-menu-widget/${language}/live_casino.webp" alt="livecasino" class="bottomMenuWidgetImage" >
     </a>
@@ -3771,12 +3771,12 @@ ${
       : ``
   }
 
-  <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
+  <div class="bottom-menu-widget">
     <a href="https://betredi124.com/${language}/sportsbook">
       <img src="https://proximus10.github.io/betrediofficial/images/bottom-menu-widget/${language}/sports.webp" alt="sporb" class="bottomMenuWidgetImage" >
     </a>
   </div>
-  <div class="bottom-menu-widget" style="flex: 1 1 calc(25% - 10px); text-align: center;">
+  <div class="bottom-menu-widget">
     <a href="https://betredi124.com/${language}/casino/slots">
       <img src="https://proximus10.github.io/betrediofficial/images/bottom-menu-widget/${language}/casino.webp" alt="slotcasino" class="bottomMenuWidgetImage" >
     </a>
